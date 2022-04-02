@@ -3,7 +3,7 @@ package 기본알고리즘;
 import java.util.Scanner;
 
 
-public class 세값의최대값 {
+public class Q1Q2Q3세값의최대값 {
 	
 	//1-2
 	//a,b,c의 최대값을 구하여 반환합니다.
