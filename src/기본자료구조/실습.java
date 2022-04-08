@@ -35,7 +35,7 @@ public class 실습 {
 			  System.out.println("키값 아래와 같습니다.");
 			  for(int i=1;i<=num;i++) { 
 				  //height[i] = stdIn.nextInt();//요소의 값을 직접입력하여 결정 
-				  height[i] = 100 + rand.nextInt(90);//요소의 값을 난수로 결정
+				  height[i] = 100 + rand.nextInt(90);//요소의 값을 난수로 결정, 0부터 89(n-1)까지의 난수가 생성된다. 
 				  System.out.print("height["+i+"]:"+height[i]);
 			  }
 			 
