@@ -67,13 +67,13 @@ public class Q15직각이등변삼각형출력 {
 		}while(n<=0);
 		
 		System.out.println("왼쪽 아래가 직각인 이등변 삼각형을 출력합니다");
-		triangleLB(n);//왼쪽 아래가 직각인 이등변 삼각형을 출력
+		triangleLB(n);
 		System.out.println("왼쪽 위가 직각인 이등변 삼각형을 출력합니다");
-		triangleLU(n);//왼쪽 위가 직각인 이등변 삼각형을 출력
+		triangleLU(n);
 		System.out.println("오른쪽 위가 직각인 이등변 삼각형을 출력합니다");
-		triangleRU(n);//왼쪽 위가 직각인 이등변 삼각형을 출력
+		triangleRU(n);
 		System.out.println("오른쪽 아래가 직각인 이등변 삼각형을 출력합니다");
-		triangleRB(n);//왼쪽 위가 직각인 이등변 삼각형을 출력
+		triangleRB(n);
 
 	}
 

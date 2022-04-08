@@ -12,13 +12,14 @@ public class Q16피라미드 {
 		
 		for(int i=0;i<n;i++) {
 			
-			for(int j=1;j<n-i;j++) {
+			for(int j=1;j<n-i;j++) {//그리고 이건 앞에만 신경쓰면된다 뒤에도 신경써서..ㅠㅠ
 				
 				System.out.print('-');
 			}
 			
-			for(int k=0;k<i*2+1;k++) {
-				
+			for(int k=0;k<i*2+1;k++) {//나눗셈까지 접근했었는데.. 곱하기를 생각못했다..ㅠㅠ
+				//1,1+2,1+2+2,...
+				//1+(0*2), 1+(1*2), 1+(2*2)
 				System.out.print('*');
 			}
 			
