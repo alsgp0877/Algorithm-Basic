@@ -14,6 +14,11 @@ public class Q2역순정렬과정 {
 		}
 		//배열a의 요소를  역순으로 정렬
 		static void reverse(int[] a) {
+			for(int i=0;i<a.length;i++) {
+				  System.out.print(a[i]);
+			}
+			System.out.println(); 
+			  
 			for(int i=0;i<a.length/2;i++) {
 				swap(a,i,a.length-i-1);
 				System.out.println("a["+i+"]과 a["+((a.length-i)-1)+"]를 교환합니다.");
@@ -22,6 +27,7 @@ public class Q2역순정렬과정 {
 				}
 				System.out.println();
 			}
+			System.out.println("역순정렬을 맞쳤습니다."); 
 		}
 	
 	
@@ -40,13 +46,7 @@ public class Q2역순정렬과정 {
 				  
 			  }
 			  
-			  for(int i=0;i<num;i++) {
-				  System.out.print(x[i]);
-			  }
-			  System.out.println(); 
-			  
 			  reverse(x);//배열 a의 요소를 역순으로 정렬
-			  System.out.println("역순정렬을 맞쳤습니다."); 
 			
 		}
 
