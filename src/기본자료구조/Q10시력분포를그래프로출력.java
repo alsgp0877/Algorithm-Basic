@@ -3,7 +3,7 @@ package 기본자료구조;
 import java.util.Scanner;
 import java.util.Random;
 
-public class 실습8 {
+public class Q10시력분포를그래프로출력 {
 	
 		static final int VMAX = 21; //시력분포단위
 		
@@ -35,8 +35,9 @@ public class 실습8 {
 			int i=0;
 			dist[i]=0;
 			for(i=0;i<dat.length;i++) {
-				if(dat[i].vision >=0.0 && dat[i].vision<=VMAX/10.0) {//학생시력이 0.0보다 크고 21/10.0(2.1)보다 작다면
-					dist[(int)(dat[i].vision*10)]++;//ex)dat[0].vision==0.1->*10->1->dist[1]++;
+				if(dat[i].vision >=0.0 && dat[i].vision<=VMAX/10.0) {
+					dist[(int)(dat[i].vision*10)]++;
+					//dist[0]++;->dist[0] 배열 dist의 0번째 값은 0임 --> 0++ -> 0+1-> 1
 				}
 			}
 		}
@@ -50,8 +51,8 @@ public class 실습8 {
 				new PhyscData("함진아",173,0.3),
 				new PhyscData("최윤미",175,2.0),
 				new PhyscData("홍연의",171,1.5),
-				new PhyscData("이수진",168,0.4),
-				new PhyscData("김영준",174,1.2),
+				new PhyscData("이수진",168,1.2),
+				new PhyscData("김영준",174,0.6),
 				new PhyscData("박용규",169,0.8),
 			};
 			
@@ -68,11 +69,19 @@ public class 실습8 {
 			
 			distVision(x,vdist);//학생배열과 분포배열을 보냄
 			
+			//Q10 시력분포를 * 그래프로 출력하도록 바꾸어 프로그램을 작성하세요
 			System.out.println("\n시력분포");
 			for(int i=0;i<VMAX;i++) {
-				System.out.printf("%3.1f~:%2d명\n",i/10.0,vdist[i]);
+				System.out.printf("%3.1f~:",i/10.0);
+				for(int j=1;j<=vdist[i];j++) {
+					//vdist배열의 i번째 값이 그기준에 몇명이 있냐를 나타내는 숫자이기도 하기때문에
+					//그 숫자만큼 for문을 돌리면 별을 찍을 수있음
+					System.out.print("*");
+				}
+				
+				System.out.printf("\n");
 			}
 			
 		}
-
+		//결국 배열은 그 값이 있는 위치를 알려주는 주소같은거이기 때문에 배열이라는 장막에 속아 그안에 있는 값을 놓치면 안됨!!
 }
