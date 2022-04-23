@@ -9,13 +9,13 @@ public class Q1for문 {
 			
 			a[n]=key;//보초를 추가
 			
-			while(true) {
+			for(i=0;i<n;i++) {
 				if(a[i]==key) {
 					break;
 				}
-				i++;
 			}
-			return i == n ? -1 : i;//어차피 마지막횟수까지 도는 경우에는 그런값이 없구나..하고 인식하는것은 똑같다 
+			
+			return i == n ? -1 : i;
 		}
 		public static void main(String[] args) {
 			
